@@ -1,0 +1,63 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.8em;
+    perspective: 20px;
+    transform-style: preserve-3d;
+}
+.top, .second, .third{
+    position: relative;
+    opacity: 0.50;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.top{
+    background-image: url('./assets/rocks1.jpg');
+    min-height:100%;    
+}
+.second{
+    background-image: url('./assets/rocks2.jpg');
+    min-height: 40%;
+    
+}
+.third{
+    background-image: url("./assets/rocks3.jpg");
+    min-height: 400px;  
+}
+section{
+    text-align: center;
+    padding:5% 10%;   
+}
+.section-light{
+    background-color: bisque;
+
+}
+.section-dark{
+    background-color: darkslategrey;
+    color:white;
+
+}
+.text{
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+    font-size:3em;
+}
+.text .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+}
+.text .border .trans{
+    background-color: transparent;
+}
+
+@media(max-width:568px){
+    .top, .second, .third{
+        background-attachment: scroll;
+    }
+}
